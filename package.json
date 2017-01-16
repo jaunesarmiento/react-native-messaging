@@ -1,0 +1,11 @@
+{
+  "name": "react-native-messaging",
+  "version": "0.0.1",
+  "description": "React Native wrapper for iOS and Android SMS Messaging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaune Sarmiento <hawnecarlo@gmail.com>",
+  "license": "MIT"
+}
