@@ -41,14 +41,11 @@ RCT_EXPORT_METHOD(sendText:(NSDictionary *)options resolver:(RCTPromiseResolveBl
     MFMessageComposeViewController* composer = [[MFMessageComposeViewController alloc] init];
     composer.messageComposeDelegate = self;
     
-    NSString* message = options[@"message"];
+    NSString* body = options[@"body"];
     NSArray* recipients = options[@"recipients"];
     
-    NSLog(message);
-    NSLog(recipients.debugDescription);
-    
-    if (message) {
-        composer.body = message;
+    if (body) {
+        composer.body = body;
     }
     
     if (recipients) {
