@@ -7,7 +7,6 @@
 //
 
 #import "RCTMessaging.h"
-#import "RCTLog.h"
 
 #import <MessageUI/MessageUI.h>
 

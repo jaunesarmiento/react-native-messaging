@@ -6,7 +6,7 @@
 //  Copyright © 2017 Jaune Sarmiento. All rights reserved.
 //
 
-#import <RCTBridgeModule.h>
+#import <React/RCTBridgeModule.h>
 
 @interface RCTMessaging : NSObject <RCTBridgeModule>
 
