@@ -69,7 +69,9 @@ public class RCTMessagingModule extends ReactContextBaseJavaModule implements Ac
     @ReactMethod
     public void sendText(ReadableMap options, Promise promise) {
         try {
-            new RCTMessagingObserver(reactContext, this, options).start();
+            // This causes the app to crash due to multiple callbacks being registered
+            // in the module. Fix this some time in the future.
+            // new RCTMessagingObserver(reactContext, this, options).start();
 
             promiseResolver = promise;
 
